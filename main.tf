@@ -95,7 +95,7 @@ resource "azurerm_nat_gateway_public_ip_association" "pip_assoc" {
 resource "azurerm_subnet_nat_gateway_association" "subnet_assoc" {
   count          = var.create_nat_gateway ? (var.specific_name_subnet == false ? length(azurerm_subnet.subnet[*].id) : length(azurerm_subnet.subnet2[*].id)) : 0
   nat_gateway_id = join("", azurerm_nat_gateway.natgw[*].id)
-  subnet_id = var.specific_name_subnet ? azurerm_subnet.subnet2[count.index].id : azurerm_subnet.subnet[count.index].id
+  subnet_id      = var.specific_name_subnet ? azurerm_subnet.subnet2[count.index].id : azurerm_subnet.subnet[count.index].id
 }
 
 #Route Table
