@@ -51,5 +51,5 @@ output "route_table_id" {
 
 output "route_table_associated_subnets" {
   description = "The collection of Subnets associated with this route table."
-  value       = var.enable_route_table ? azurerm_route_table.rt[*].subnets[0] : null
+  value       = var.enable_route_table ? azurerm_route_table.rt[0].subnets : null
 }
