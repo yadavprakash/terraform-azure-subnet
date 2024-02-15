@@ -82,7 +82,7 @@ You can customize the input variables according to your specific requirements.
 
 ```hcl
 module "subnet" {
-  source               = "git::https://github.com/opsstation/terraform-azure-subnet.git?ref=v1.0.0"
+  source               = "git::https://github.com/opsstation/terraform-azure-subnet.git?ref=v1.0.1"
   name                 = "app"
   environment          = "test"
   resource_group_name  = module.resource_group.resource_group_name
