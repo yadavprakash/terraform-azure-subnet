@@ -23,7 +23,7 @@ To use this module, include it in your Terraform configuration file and provide 
 
 ```hcl
 module "subnet" {
-  source               = "git::https://github.com/opsstation/terraform-azure-subnet.git?ref=v1.0.1"
+  source               = "git::https://github.com/yadavprakash/terraform-azure-subnet.git?ref=v1.0.1"
   name                 = "app"
   environment          = "test"
   resource_group_name  = module.resource_group.resource_group_name
@@ -52,7 +52,7 @@ You can customize the input variables according to your specific requirements.
 
 ```hcl
 module "name_specific_subnet" {
-  source = "git::https://github.com/opsstation/terraform-azure-subnet.git?ref=v1.0.1"
+  source = "git::https://github.com/yadavprakash/terraform-azure-subnet.git?ref=v1.0.1"
   name                 = "app"
   environment          = "test"
   resource_group_name  = module.resource_group.resource_group_name
@@ -82,7 +82,7 @@ You can customize the input variables according to your specific requirements.
 
 ```hcl
 module "subnet" {
-  source               = "git::https://github.com/opsstation/terraform-azure-subnet.git?ref=v1.0.1"
+  source               = "git::https://github.com/yadavprakash/terraform-azure-subnet.git?ref=v1.0.1"
   name                 = "app"
   environment          = "test"
   resource_group_name  = module.resource_group.resource_group_name
@@ -109,13 +109,13 @@ module "subnet" {
 You can customize the input variables according to your specific requirements.
 
 ## Examples
-For detailed examples on how to use this module, please refer to the [example](https://github.com/opsstation/terraform-azure-subnet/tree/master/_example) directory within this repository.
+For detailed examples on how to use this module, please refer to the [example](https://github.com/yadavprakash/terraform-azure-subnet/tree/master/_example) directory within this repository.
 
 ## Authors
-Your Name Replace **MIT** and **OpsStation** with the appropriate license and your information. Feel free to expand this README with additional details or usage instructions as needed for your specific use case.
+Your Name Replace **MIT** and **yadavprakash** with the appropriate license and your information. Feel free to expand this README with additional details or usage instructions as needed for your specific use case.
 
 ## License
-This project is licensed under the **MIT** License - see the [LICENSE](https://github.com/opsstation/terraform-azure-subnet/blob/master/LICENSE) file for details.
+This project is licensed under the **MIT** License - see the [LICENSE](https://github.com/yadavprakash/terraform-azure-subnet/blob/master/LICENSE) file for details.
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
@@ -135,7 +135,7 @@ This project is licensed under the **MIT** License - see the [LICENSE](https://g
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_labels"></a> [labels](#module\_labels) | git::https://github.com/opsstation/terraform-azure-labels.git | v1.0.0 |
+| <a name="module_labels"></a> [labels](#module\_labels) | git::https://github.com/yadavprakash/terraform-azure-labels.git | v1.0.0 |
 
 ## Resources
 
@@ -163,11 +163,11 @@ This project is licensed under the **MIT** License - see the [LICENSE](https://g
 | <a name="input_environment"></a> [environment](#input\_environment) | Environment (e.g. `prod`, `dev`, `staging`). | `string` | `""` | no |
 | <a name="input_label_order"></a> [label\_order](#input\_label\_order) | Label order, e.g. `name`,`application`. | `list(any)` | <pre>[<br>  "name",<br>  "environment"<br>]</pre> | no |
 | <a name="input_location"></a> [location](#input\_location) | The location/region where the virtual network is created. Changing this forces a new resource to be created. | `string` | `""` | no |
-| <a name="input_managedby"></a> [managedby](#input\_managedby) | ManagedBy, eg 'opsstation'. | `string` | `"opsstation"` | no |
+| <a name="input_managedby"></a> [managedby](#input\_managedby) | ManagedBy, eg 'yadavprakash'. | `string` | `"yadavprakash"` | no |
 | <a name="input_name"></a> [name](#input\_name) | Name  (e.g. `app` or `cluster`). | `string` | `""` | no |
 | <a name="input_nat_gateway_idle_timeout"></a> [nat\_gateway\_idle\_timeout](#input\_nat\_gateway\_idle\_timeout) | Idle timeout configuration in minutes for Nat Gateway | `number` | `4` | no |
 | <a name="input_public_ip_zones"></a> [public\_ip\_zones](#input\_public\_ip\_zones) | Public ip Zones to configure. | `list(string)` | `null` | no |
-| <a name="input_repository"></a> [repository](#input\_repository) | Terraform current module repo | `string` | `"https://github.com/opsstation/terraform-azure-subnet"` | no |
+| <a name="input_repository"></a> [repository](#input\_repository) | Terraform current module repo | `string` | `"https://github.com/yadavprakash/terraform-azure-subnet"` | no |
 | <a name="input_resource_group_name"></a> [resource\_group\_name](#input\_resource\_group\_name) | The name of an existing resource group to be imported. | `string` | `""` | no |
 | <a name="input_route_table_name"></a> [route\_table\_name](#input\_route\_table\_name) | The name of the route table. | `string` | `null` | no |
 | <a name="input_routes"></a> [routes](#input\_routes) | List of objects that represent the configuration of each route. | `list(map(string))` | `[]` | no |
