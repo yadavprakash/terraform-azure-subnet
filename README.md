@@ -23,7 +23,7 @@ To use this module, include it in your Terraform configuration file and provide 
 
 ```hcl
 module "subnet" {
-  source               = "git::https://github.com/yadavprakash/terraform-azure-subnet.git?ref=v1.0.1"
+  source               = "git::https://github.com/yadavprakash/terraform-azure-subnet.git"
   name                 = "app"
   environment          = "test"
   resource_group_name  = module.resource_group.resource_group_name
@@ -52,7 +52,7 @@ You can customize the input variables according to your specific requirements.
 
 ```hcl
 module "name_specific_subnet" {
-  source = "git::https://github.com/yadavprakash/terraform-azure-subnet.git?ref=v1.0.1"
+  source = "git::https://github.com/yadavprakash/terraform-azure-subnet.git"
   name                 = "app"
   environment          = "test"
   resource_group_name  = module.resource_group.resource_group_name
@@ -82,7 +82,7 @@ You can customize the input variables according to your specific requirements.
 
 ```hcl
 module "subnet" {
-  source               = "git::https://github.com/yadavprakash/terraform-azure-subnet.git?ref=v1.0.1"
+  source               = "git::https://github.com/yadavprakash/terraform-azure-subnet.git"
   name                 = "app"
   environment          = "test"
   resource_group_name  = module.resource_group.resource_group_name
